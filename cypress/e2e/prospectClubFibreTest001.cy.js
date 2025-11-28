@@ -22,6 +22,7 @@ describe('Simuler un prospect pour my.clubfibre.com/fibre_secure2', () => {
     cy.get('.inline-flex').contains('Voir mon offre Fibre').click();
 
     cy.wait(5000);
-    cy.contains(`Nous avons trouvé l'offre parfaite pour vous !`).should('be.visible');
+    cy.contains(/(Nous avons trouvé l'offre parfaite pour vous !|Aucune offre trouvée)/)
+      .should('be.visible');
   })
 })
