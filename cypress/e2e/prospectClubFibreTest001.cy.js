@@ -10,7 +10,7 @@ describe('Simuler un prospect pour my.clubfibre.com/fibre_secure2', () => {
     cy.get('#choice-item-engagement-0').click();
     cy.get('#address-input-adresse_postale').type('123 Rue de la Paix, 75000 Paris, France');
     
-    cy.wait(3000); // Attendre que la suggestion soit visible
+    cy.wait(10000); // Attendre que la suggestion soit visible
     cy.get('.suggestion-item').contains('Rue de la Paix').click();
     cy.get('.items-center').contains('Suivant').click();
 
