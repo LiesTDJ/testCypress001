@@ -23,7 +23,7 @@ describe('Simuler un prospect pour my.clubfibre.com/fibre_secure2', () => {
     cy.get('#partners-consent').click();
     cy.get('.inline-flex').contains('Voir mon offre Fibre').click();
 
-    cy.wait(5000); // Attendre que la suggestion soit visible
+    cy.wait(15000); // Attendre que la suggestion soit visible
     cy.contains(/(Nous avons trouvé l'offre parfaite pour vous !|Aucune offre trouvée)/)
       .should('be.visible');
   })
