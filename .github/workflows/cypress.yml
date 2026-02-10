@@ -2,8 +2,6 @@ name: Cypress Tests
 
 on:
   workflow_dispatch:      # Pour lancer manuellement
-  schedule:
-    - cron: "0 * * * *"   # Toutes les heures (à XX:00)
   push:
     branches:
       - main              # Facultatif : lance à chaque push
